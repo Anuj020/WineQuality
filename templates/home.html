@@ -1,0 +1,76 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Wine Quality Indicator</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Wine Quaity  Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">fixed acidity</label>
+            <input class="form-control" type="number" name="fixed_acidity"
+                placeholder="Enter your Reading score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">volatile acidity</label>
+            
+            <input class="form-control" type="number" name="volatile_acidity"
+                placeholder="Enter your Reading score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">citric acid</label>
+            <input class="form-control" type="number" name="citric_acid"
+                placeholder="Enter your Reading score" step="0.01" />
+            
+        </div>
+        <div class="mb-3">
+            <label class="form-label">residual sugar</label>
+            <input class="form-control" type="number" name="residual_sugar"
+                placeholder="Enter your Reading score" step="0.01" />
+            
+        </div>
+        <div class="mb-3">
+            <label class="form-label">chlorides</label>
+            <input class="form-control" type="number" name="chlorides"
+                placeholder="Enter your Reading score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">free sulfur dioxide</label>
+            <input class="form-control" type="number" name="free_sulfur_dioxide"
+                placeholder="Enter your Reading score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">total sulfur dioxide</label>
+            <input class="form-control" type="number" name="total_sulfur_dioxide"
+                placeholder="Enter your Reading Score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">density</label>
+            <input class="form-control" type="number" name="density"
+                placeholder="Enter your Reading Score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">pH</label>
+            <input class="form-control" type="number" name="pH"
+                placeholder="Enter your Reading Score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">sulphates</label>
+            <input class="form-control" type="number" name="sulphates"
+                placeholder="Enter your Reading Score" step="0.01" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">alcohol</label>
+            <input class="form-control" type="number" step="0.01" name="alcohol"
+                placeholder="Enter your Reading Score"  />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict Wine Quaity" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>

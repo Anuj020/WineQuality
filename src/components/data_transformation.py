@@ -28,8 +28,8 @@ class DataTransformation:
 
         try:
             numeric_columns = [
-                "fixed acidity","volatile acidity","citric acid","residual sugar","chlorides",
-                "free sulfur dioxide","total sulfur dioxide","density","pH","sulphates",
+                "fixed_acidity","volatile_acidity","citric_acid","residual_sugar","chlorides",
+                "free_sulfur_dioxide","total_sulfur_dioxide","density","pH","sulphates",
                 "alcohol"
             ] 
             
@@ -67,8 +67,8 @@ class DataTransformation:
 
             target_column_name = "quality"
             numeric_columns = [
-                "fixed acidity","volatile acidity","citric acid","residual sugar","chlorides",
-                "free sulfur dioxide","total sulfur dioxide","density","pH","sulphates",
+                "fixed_acidity","volatile_acidity","citric_acid","residual_sugar","chlorides",
+                "free_sulfur_dioxide","total_sulfur_dioxide","density","pH","sulphates",
                 "alcohol"
             ]
 
